@@ -28,6 +28,8 @@ complemento varchar (100),
 primary key(codFunc)
 );
 
+
+
 create table tbFornecedores(
 codForn int not null auto_increment,
 nome varchar (50) not null,
@@ -88,3 +90,12 @@ desc tbFornecedores;
 desc tbProdutos;
 desc tbCliente;
 desc tbVendas;
+
+--inserindo registros na tabela
+
+insert into tbFornecedores
+	(nome,email,cpf,telCel,dataNasc,sexo,salario,logradouro,numero,cep,bairro,cidade,estado,siglaEs,complemento)
+	values ('Kamilla Melissa', 'kamilla.melissa@gmail.com', '124.255.758.98', '98629-8649', '2005/07/09', 'f',4500.55, 'Rua Antonio Ambuba', '50', '05782370', 'Pq.Munhoz', 'São Paulo', 'Sao Paulo' 'SP', 'Bloco 4' );
+
+	--vizualizando os registros das tabelas
+	select * from tbfuncionarios
